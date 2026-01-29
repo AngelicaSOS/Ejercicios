@@ -23,9 +23,10 @@ print("-"*30)
 print("CADENAS Y NUMEROS")
 print("-"*30)
 total=5500
-#mensaje="El total de la compra es: "+total+" pesos"
+#mensaje="El total de la compra es: "+total+" pesos" se tiene que convertir el valor numerico para agregarlo a una cadena
 mensaje="El total de la compra es: "+str(total)+" pesos"
 print(mensaje)
+
 mensaje=f"El total de la compra es: {total} pesos"
 print(mensaje)
 
@@ -38,26 +39,26 @@ print(mensaje)
 print("-"*30)
 print("FUNCIONES CON CADENAS")
 print("-"*30)
-nombres="Ana,Maria,Juan,Carlos,Luis"
+nombres="Ana Maria Juan Carlos Luis"
 elementos="a a a b b B c c c c c aa"
-print(nombres.upper())
-print(nombres.lower())
-print(nombres.capitalize())
-print(nombres.title())
-print(nombres.replace("a","x"))
-print(nombres.split(","))
-print(nombres.count("a"))
-print(elementos.count("a"))
-print(nombres.split(",")[0]) 
-print(nombres.split(",")[-1]) 
-print(nombres.split(",")[-2])
+print(nombres.upper()) #convierte en mayusculas
+print(nombres.lower()) #convierte en minusculas
+print(nombres.capitalize()) #convierte en la primer letra en mayuscula
+print(nombres.title()) #convierte en mayuscula la letra inicial de cada palabra
+print(nombres.replace("a","x")) #reemplaza todas las letras a por una x
+print(nombres.split(" ")) #Separa las palabras con coma
+print(nombres.count("a")) #Cuenta las letras a minusculas en nombres
+print(elementos.count("a")) #Cuenta las letras a minusculas en elementos
+print(nombres.split(" ")[0]) #Posicion inicial de los elementos
+print(nombres.split(" ")[-1]) #Posicion final de los elementos
+print(nombres.split(" ")[-2]) #Penultimo de los elementos
 #print(nombres.split(",")[-6])
-print(nombres.replace("Juan","Pedro"))
-print(nombres.replace(","," "))
-print(nombres.endswith("Luis"))
-print(nombres.startswith("Ana"))
-print(nombres.index("Carlos"))
-print(nombres.find("Juan"))
+print(nombres.replace("Juan","Pedro")) #Reemplaza Pedro a Juan
+print(nombres.replace(","," ")) #Reemplaxza los espacios de la lista por comas
+print(nombres.endswith("Luis")) #Regresa si la cadena termina con Luis
+print(nombres.startswith("Ana")) #Regresa si la cadena inicia con Ana
+print(nombres.index("Carlos")) #Regresa la posicion en la que inicia el nombre de Carlos (Cuenta los caracteres)
+print(nombres.find("Juan")) #Regresa la posicion donde encuentra a Juan (cuenta los caracteres)
 
 print("-"*30)
 print("Cadenas multilínea")
