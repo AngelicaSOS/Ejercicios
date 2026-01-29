@@ -47,8 +47,8 @@ print(nombres.capitalize()) #convierte en la primer letra en mayuscula
 print(nombres.title()) #convierte en mayuscula la letra inicial de cada palabra
 print(nombres.replace("a","x")) #reemplaza todas las letras a por una x
 print(nombres.split(" ")) #Separa las palabras con coma
-print(nombres.count("a")) #Cuenta las letras a minusculas en nombres
-print(elementos.count("a")) #Cuenta las letras a minusculas en elementos
+print(nombres.count("a")) #Cuenta las letras minusculas en nombres
+print(elementos.count("a")) #Cuenta las letras minusculas en elementos
 print(nombres.split(" ")[0]) #Posicion inicial de los elementos
 print(nombres.split(" ")[-1]) #Posicion final de los elementos
 print(nombres.split(" ")[-2]) #Penultimo de los elementos
@@ -68,6 +68,8 @@ texto_multilinea="""Este es un texto
 **Podemos escribir lo que queramos aquí,
 $$y se mantendrá el formato!!."""
 print(texto_multilinea)
+print()
+
 cadena_limpia=texto_multilinea.replace("[]","")\
-    .replace("**","").replace("$$","")
+    .replace("**","").replace("$$","") #Reemplaza caracteres para eliminarlos
 print(cadena_limpia)
