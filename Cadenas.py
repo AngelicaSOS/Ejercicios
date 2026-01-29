@@ -63,13 +63,30 @@ print(nombres.find("Juan")) #Regresa la posicion donde encuentra a Juan (cuenta 
 print("-"*30)
 print("Cadenas multilínea")
 print("-"*30)
-texto_multilinea="""Este es un texto
+texto_multilinea="""Este es un texto 
 [][]que abarca varias líneas.
 **Podemos escribir lo que queramos aquí,
 $$y se mantendrá el formato!!."""
+#El triple asterisco convierte el texto en multilinea
 print(texto_multilinea)
 print()
 
 cadena_limpia=texto_multilinea.replace("[]","")\
     .replace("**","").replace("$$","") #Reemplaza caracteres para eliminarlos
 print(cadena_limpia)
+
+print("-"*30)
+print("CADENAS FORMATEADAS")
+print("-"*30)
+nombre="Gabriel"
+edad=28
+mensaje="Mi nombre es {} y tengo {} años.".format(nombre,edad)
+print(mensaje)
+mitote="""Para enterarlos que 
+el dia de ayer me encontré con {}
+que no veía desde que se graduó con {}.
+y ahora resulta que ya no vive con {}
+el que eras amigo de {}
+porque se juntó con {}"""
+mitote_completo=mitote.format(*nombres.split(" ")) #El Asterisco funciona para que le quite los corchetes y los toma como palabras individuales
+print(mitote_completo)
