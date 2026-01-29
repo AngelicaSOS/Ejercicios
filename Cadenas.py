@@ -10,9 +10,10 @@ print("-"*30)
 print("CADENAS Y CADENAS")
 print("-"*30)
 cad="Esta es una 'cadena con comillas simples' dentro de comillas dobles"
+cad=cad+" como ejemplo"
 print(cad)
 print(cad[0])
-# cad[0]='e'  #Error, las cadenas son inmutables
+#cad[0]='e'  #Error, las cadenas son inmutables
 lenguaje="Python"
 descripcion="Este es un buen curso"
 frase=descripcion+" de "+lenguaje
